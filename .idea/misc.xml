@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1435" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/drawable/history_layout_background.xml" value="0.1435" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/drawable/ic___minute_workout.xml" value="0.1435" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1435" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/drawable/linear_layout_background.xml" value="0.1435" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/drawable/mybtnbackground.xml" value="0.2105" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/drawable/progress_bar_background.xml" value="0.1435" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/drawable/progress_bar_background_grey.xml" value="0.1435" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/drawable/radio_bacground.xml" value="0.1435" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/drawable/radio_button_background.xml" value="0.1435" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/drawable/radio_buttons_text_colorrs.xml" value="0.1435" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/drawable/recycler_selected_item_background.xml" value="0.1435" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/drawable/recycler_view_item_background.xml" value="0.1435" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/drawable/start_btn_background.xml" value="0.1435" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/layout/activity_bmi.xml" value="0.2" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/layout/activity_excercise.xml" value="0.264" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/layout/activity_finish.xml" value="0.2" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/layout/activity_history.xml" value="0.2" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/layout/dialog_alert_layout.xml" value="0.2" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/layout/excersize_displayed_items.xml" value="0.25" />
+        <entry key="..\:/Android_Projects_All/7MinuteWorkout/app/src/main/res/layout/history_adapter_layout.xml" value="0.22826086956521738" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExcerciseActivity"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolBar"
+        android:theme="@style/my_toolbar_style"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:padding="5sp"
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="1.Excercize Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myToolBar"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/mainImageview"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:padding="5sp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bupees"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/flexcersize1"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+
+        app:layout_constraintVertical_bias="0.296"
+        tools:layout_editor_absoluteX="0dp"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/mymaintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="REST TIME"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myToolBar" />
+
+    <FrameLayout
+       android:layout_marginTop="5sp"
+        android:id="@+id/floriginal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/start_btn_background"
+        app:layout_constraintBottom_toTopOf="@id/nextexcersizetext"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mymaintext"
+        app:layout_constraintVertical_bias="0.071">
+
+        <ProgressBar
+            android:id="@+id/timepg"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/progress_bar_background_grey"
+            android:indeterminate="false"
+            android:max="10"
+            android:progress="10"
+            android:progressDrawable="@drawable/progress_bar_background"
+            android:rotation="-90" />
+
+        <LinearLayout
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:background="@drawable/linear_layout_background"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/timertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/nextexcersizetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Excersize : "
+        android:textSize="18sp"
+
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/floriginal" />
+
+    <TextView
+        android:id="@+id/NextExcersizeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plankes"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@id/nextexcersizetext"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/floriginal"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <TextView
+        android:id="@+id/exsersizeTimerStartedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excersize Timer Started"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainImageview"
+        app:layout_constraintVertical_bias="0.075"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/flexcersize1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="@drawable/start_btn_background"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exsersizeTimerStartedText"
+        app:layout_constraintVertical_bias="0.079"
+        tools:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/exercise1pg"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/progress_bar_background_grey"
+            android:indeterminate="false"
+            android:max="30"
+            android:progress="10"
+            android:progressDrawable="@drawable/progress_bar_background"
+            android:rotation="-90" />
+
+        <LinearLayout
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:background="@drawable/linear_layout_background"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/excersize1text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvExcerssize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

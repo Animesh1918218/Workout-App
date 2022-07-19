@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BmiActivity"
+    android:padding="5sp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myBmiToolbar"
+        style="@style/my_toolbar_style"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="8dp"
+        android:title="BMI CALCULATOR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginLeft="5sp"
+        android:id="@+id/myRadioGroup"
+        app:layout_constraintBottom_toTopOf="@+id/weightText"
+        app:layout_constraintTop_toBottomOf="@+id/myBmiToolbar"
+        tools:layout_editor_absoluteX="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/radio_bacground"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/metricunits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_background"
+            android:checked="true"
+            android:button="@null"
+            android:gravity="center"
+            android:text="METRICS UNITS"
+            android:textColor="@drawable/radio_buttons_text_colorrs"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/usunits"
+            android:button="@null"
+            android:background="@drawable/radio_button_background"
+            android:layout_width="match_parent"
+            android:textColor="@drawable/radio_buttons_text_colorrs"
+            android:layout_height="wrap_content"
+            android:text="US UNITS"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/weightText"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+
+        android:hint="Weight(in Kg)"
+        android:padding="5dp"
+        app:boxStrokeColor="@color/forest_green"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:helperText="*REQUIRED"
+        app:helperTextTextColor="@color/Dark_Red"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myRadioGroup">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/actualweighttxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:maxLength="30" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/heightText"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:boxStrokeColor="@color/forest_green"
+        android:hint="Height(in CM)"
+        android:padding="5dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:helperText="*REQUIRED"
+        app:helperTextTextColor="@color/Dark_Red"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:id="@+id/actualheighttxt"
+            android:maxLength="30" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/bmiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alike_angular"
+        android:text="Your BMI : 24"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightText"
+        app:layout_constraintVertical_bias="0.039"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/descriptionTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/asul"
+        android:text="Your BMI : 24"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmiText"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/andika_new_basic"
+        android:text="Your BMI : 24"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:textSize="15sp"
+        android:id="@+id/messageTxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionTxt"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <Button
+        android:id="@+id/calculatebtn"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/forest_green"
+        android:text="CALCULATE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageTxt"
+        app:layout_constraintVertical_bias="0.158" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
